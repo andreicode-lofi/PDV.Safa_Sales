@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6FF4989-97BB-4898-9D12-E2FC39E0520B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PdvSafeSales</RootNamespace>
+    <AssemblyName>PdvSafeSales</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\andre\OneDrive\Área de Trabalho\Plataformas\instalador pdv Safe Sales\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.linkedin.com/in/andrey-costa-de-souza-b34817142/</SupportUrl>
+    <ProductName>Safe Sales</ProductName>
+    <PublisherName>Andrey Souza</PublisherName>
+    <SuiteName>PDV</SuiteName>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2976AC2E895692F8A24968E849D5B5916930285D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PdvSafeSales_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db_Pvd_SafeSalesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_Pvd_SafeSalesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarProduto.Designer.cs">
+      <DependentUpon>frmConsultarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CadastraCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadastraCliente.Designer.cs">
+      <DependentUpon>frm_CadastraCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadastroCategoria.Designer.cs">
+      <DependentUpon>frm_CadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastroUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastroUser.Designer.cs">
+      <DependentUpon>frm_cadastroUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Menu.Designer.cs">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadastroProduto.Designer.cs">
+      <DependentUpon>frm_CadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RelatorioProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_RelatorioProduto.Designer.cs">
+      <DependentUpon>frm_RelatorioProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Venda.Designer.cs">
+      <DependentUpon>frm_Venda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="frmConsultarProduto.resx">
+      <DependentUpon>frmConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadastraCliente.resx">
+      <DependentUpon>frm_CadastraCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadastroCategoria.resx">
+      <DependentUpon>frm_CadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadastroProduto.resx">
+      <DependentUpon>frm_CadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastroUser.resx">
+      <DependentUpon>frm_cadastroUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Menu.resx">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RelatorioProduto.resx">
+      <DependentUpon>frm_RelatorioProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Venda.resx">
+      <DependentUpon>frm_Venda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rel_Produto.rdlc" />
+    <None Include="db_Pvd_SafeSalesDataSet1.xsc">
+      <DependentUpon>db_Pvd_SafeSalesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_Pvd_SafeSalesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_Pvd_SafeSalesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_Pvd_SafeSalesDataSet1.xss">
+      <DependentUpon>db_Pvd_SafeSalesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PdvSafeSales_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\sistema.Dal.Categoria.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Cliente.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Conta_receber.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Itens_venda.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Produto.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Status.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.tb_Itens_venda.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.tb_Usuario.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.tens_venda.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Usuario.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Usuarios.datasource" />
+    <None Include="Properties\DataSources\sistema.Dal.Venda.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\porta-de-saida.png" />
+    <None Include="Resources\design-de-interface-do-usuario.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\relatorio-de-negocios.png" />
+    <None Include="Resources\loginGrande.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\оплата-png-2.png" />
+    <None Include="Resources\venda-por-telefone.png" />
+    <None Include="Resources\consultando.png" />
+    <None Include="Resources\customer-service-woman-with-headphones-and-microphone-with-laptop-concept-illustration-for-support-call-center-vector.jpg" />
+    <None Include="Resources\graphic-cartoon-character-customer-support-vector-36411695.jpg" />
+    <None Include="Resources\registra Venda.png" />
+    <None Include="Resources\Registra Produtos.png" />
+    <None Include="Resources\Registra Cliente.png" />
+    <None Include="Resources\Registra Categorias.png" />
+    <None Include="Resources\icon.ico" />
+    <None Include="Resources\Fundo_Frm.png" />
+    <None Include="Resources\frm fundo.jpg" />
+    <None Include="Resources\boost-sales-abstract-concept-illustration_335657-1833.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sistema.Dal\sistema.Dal.csproj">
+      <Project>{61116b64-c5e1-47fb-9b71-9ae27955e557}</Project>
+      <Name>sistema.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
